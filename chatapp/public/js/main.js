@@ -78,7 +78,8 @@ function handleMessage(msg) {
 
 
     // assigning variables
-    var socket = io();
+    var socket = io('http://localhost:3000');
+    console.log(socket);
     var user_name;
     var _id;
     var messages = document.getElementById('messages');
