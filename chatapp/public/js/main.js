@@ -71,7 +71,7 @@ function handleMessage(msg) {
     msgBubble.appendChild(msgInfo);
     msgBubble.appendChild(msgText);
     messages.appendChild(msgBubble);
-    const scrollableDiv = document.getElementsByClassName('msger');
+    const scrollableDiv = document.getElementById('messages');
     scrollableDiv.scrollTop = scrollableDiv.scrollHeight;
 
     }
