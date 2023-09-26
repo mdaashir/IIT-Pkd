@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <h1 id="counter-div" > 0 </h1>
+
+    <!-- <script src="/socket.io/socket.io.js"></script> -->
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+
+    <script>
+
+        var socket = io();
+
+        socket.on('cnt-2', (cnt) => {
+
+            console.log(cnt);
+
+            document.getElementById('counter-div').innerHTML = cnt
+
+        } )
+
+
+    </script>
+
+</body>
+
+</html>
